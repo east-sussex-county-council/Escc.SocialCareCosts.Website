@@ -28,11 +28,11 @@
 
                 <p>You will not qualify for support if your needs have been assessed as moderate or low. However, we can still give you information and advice about other sources of support.  </p>
 
-                <p><a href="/socialcare/gettinghelp/eligibility/default.htm">Am I eligible for support?</a></p>
+                <p><a href="/socialcare/getting-help-from-us/am-i-eligible-for-care-or-support/">Am I eligible for support?</a></p>
 
                 <p>If you have not yet had an assessment get in touch to find out what help we might be able to give you.</p> 
                 
-                <p><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></p>
+                <p><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></p>
             </section>
             </asp:placeholder>
 
@@ -47,8 +47,8 @@
                 <p>Even if you don't qualify for any financial help, it's still a good idea to contact us for a care assessment. This can help you find out about the type of care you need and the care options available. We can also advise you on any benefits that you may be entitled to. For more information, see:</p>
 
                 <ul>
-                <li><a href="/socialcare/gettinghelp/apply/helpforeveryone.htm">Help we can give to everyone</a></p></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></p></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -69,7 +69,7 @@
 
                 <p>For more information, see:</p>
 
-                <p><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></p>
+                <p><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></p>
             </section>
             </asp:placeholder>
 
@@ -88,8 +88,8 @@
                 <p>For more information, see:</p>
 
                 <ul>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="http://www.direct.gov.uk/en/moneytaxandbenefits/benefitstaxcreditsandothersupport/on_a_low_income/dg_10018692">DirectGov – Pensions and Savings Credits</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="https://www.gov.uk/pension-credit">GOV.UK – Pensions and Savings Credits</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -103,8 +103,8 @@
                 <p>If you have less than &pound;23,250 in savings and investments and do not own a property then you may be eligible for help with the cost of your care. You will still have to contribute to the cost of your care from your income.</p>
 
                 <ul>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -122,8 +122,8 @@
                 <p>Even if you don't qualify for any financial help, it's still a good idea to contact us for a care assessment. This can help you find out about the type of care you need and the care options available. We can also advise you on any benefits that you may be entitled to. For more information, see:</p>
 
                 <ul>
-                <li><a href="/socialcare/gettinghelp/apply/helpforeveryone.htm">Help we can give to everyone</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
              </section>
             </asp:placeholder>
@@ -139,9 +139,9 @@
                 <p>If you are going to receive care in your own home, and do not own any other property, we will only look at your savings and income when we work out how much you will have to pay towards your care. </p>
 
                 <ul>
-                <li><a href="/socialcare/athome/default.htm">Support to stay at home</a></li>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/support-to-stay-at-home/">Support to stay at home</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -157,9 +157,9 @@
                 <p>If your circumstances change and you have to go into residential care permanently, we may have to take the value of your home into account. This is because when you go into permanent residential care we consider that you have given up your home, so we look at your share of the property in our financial assessment.</p>
 
                 <ul>
-                <li><a href="/socialcare/leavinghome/temporary/shorterm.htm">Short term care homes and day care</a></li>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/carers/respite/summary/">Short term care homes and day care</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -184,10 +184,10 @@
                 <p>If you share your home with someone who is not in the above list, we may take the value of your home into account when we work out how much you will have to pay towards your care. </p>
 
                 <ul>
-                <li><a href="/socialcare/leavinghome/carehomes/default.htm">Care homes &#8211; the basics</a></li>
-                <li><a href="/socialcare/hospital/preparing/homeandpets.htm">Looking after your home, pets and belongings</a></li>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/leaving-home/care-homes/">Care homes</a></li>
+                <li><a href="/socialcare/going-into-hospital/home-pets-belongings/">Looking after your home, pets and belongings</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
@@ -209,10 +209,10 @@
                 <p>After the 12 week period, we will take the value of your home into account when working out how much you should pay.</p>
                 
                 <ul>
-                <li><a href="/socialcare/leavinghome/carehomes/default.htm">Care homes &#8211; the basics</a></li>
-                <li><a href="/socialcare/hospital/preparing/homeandpets.htm">Looking after your home, pets and belongings</a></li>
-                <li><a href="/socialcare/gettinghelp/money/yourfinances/default.htm">How we work out your finances</a></li>
-                <li><a href="/socialcare/aboutus/contact.htm">Contact Adult Social Care</a></li>
+                <li><a href="/socialcare/leaving-home/care-homes/">Care homes</a></li>
+                <li><a href="/socialcare/going-into-hospital/home-pets-belongings/">Looking after your home, pets and belongings</a></li>
+                <li><a href="/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                <li><a href="/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
                 </ul>
             </section>
             </asp:placeholder>
