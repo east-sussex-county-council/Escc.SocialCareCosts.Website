@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Escc.SocialCareCosts.Website.DefaultPage" %>
+<%@ Register TagPrefix="EastSussexGovUK" TagName="EastSussex1Space" src="~/masterpages/Controls/1Space.ascx"%>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     <Metadata:MetadataControl runat="server"
         Title="How much will I have to pay?"
@@ -6,16 +7,16 @@
         DateCreated="2011-06-24"
         IpsvPreferredTerms="Charges for care"
         LgtlType="Forms" />
-    <ClientDependency:Css runat="server" Files="FormsSmall" />
+    <ClientDependency:Css runat="server" Files="FormsSmall;ContentSmall" Moveable="false" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <ClientDependency:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
-        <ClientDependency:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="FormsMedium;ContentMedium" MediaConfiguration="Medium" />
+        <ClientDependency:Css runat="server" Files="FormsLarge;ContentLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="content">
     <div class="article">
-        <div class="text">
+        <div class="content text-content">
             <h1>How much will I have to pay for social care?</h1>
 
             <asp:placeholder runat="server" id="text1b">
@@ -222,10 +223,9 @@
 
         <section>
             <asp:placeholder runat="server" id="q1">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group1" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q1radio" errormessage="Please answer question 1 before you click 'Next'" validationgroup="group1" />
-                </div>
 
                     <div class="form short-form">
                     <h2>1. Have you been assessed and told that you have substantial or critical needs?</h2>
@@ -237,13 +237,14 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button1" cssclass="button" onclick="button1_Click" validationgroup="group1" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q2">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group2" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q2radio" errormessage="Please answer question 2 before you click 'Next'" validationgroup="group2" />
-                </div>
+
                     <div class="form short-form">
                  <h2>2. How much do you have in savings and investments?</h2>
                <div class="radioButtonList">
@@ -255,13 +256,14 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button2" cssclass="button" onclick="button2_Click" validationgroup="group2" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q3">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group3" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q3radio" errormessage="Please answer question 3 before you click 'Next'" validationgroup="group3" />
-                </div>
+
                     <div class="form short-form">
                 <h2>3. Do you own a property?</h2>
                 <div class="radioButtonList">
@@ -272,13 +274,14 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button3" cssclass="button" onclick="button3_Click" validationgroup="group3" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q4">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group4" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q4radio" errormessage="Please answer question 4 before you click 'Next'" validationgroup="group4" />
-                </div>
+
                     <div class="form short-form">
                 <h2>4. Do you own more than one property, or a property that you are not living in?</h2>
                 <div class="radioButtonList">
@@ -289,13 +292,13 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button4" cssclass="button" onclick="button4_Click" validationgroup="group4" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q5">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group5" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q5radio" errormessage="Please answer question 5 before you click 'Next'" validationgroup="group5" />
-                </div>
 
                     <div class="form short-form">
                 <h2>5. What kind of care do you need?</h2>
@@ -307,13 +310,13 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button5" cssclass="button" onclick="button5_Click" validationgroup="group5" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q6">
-                <div class="text">
+                <div class="content text-content">
                     <Validators:EsccValidationSummary runat="server" validationgroup="group6" />
                     <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q6radio" errormessage="Please answer question 6 before you click 'Next'" validationgroup="group6" />
-                </div>
 
                     <div class="form short-form">
                 <h2>6. Are you going into residential care permanently or for a temporary stay?</h2>
@@ -325,13 +328,13 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button6" cssclass="button" onclick="button6_Click" validationgroup="group6" />
                     </div>
+                </div>
             </asp:placeholder>
 
             <asp:placeholder runat="server" id="q7">
-                <div class="text">
+                <div class="content text-content">
                    <Validators:EsccValidationSummary runat="server" validationgroup="group7" />
                    <Validators:EsccRequiredFieldValidator runat="server" controltovalidate="q7radio" errormessage="Please answer question 7 before you click 'Next'" validationgroup="group7" />
-                </div>
 
                     <div class="form short-form">
                 <h2>7. Does someone else live in your home?</h2>
@@ -343,10 +346,15 @@
                 </div>
                 <FormControls:EsccButton runat="server" text="Next" id="button7" cssclass="button" onclick="button7_Click" validationgroup="group7" />
                     </div>
+                </div>
             </asp:placeholder>
 
         </section>
 
-        <EastSussexGovUK:Share runat="server" id="share" />
+        <EastSussexGovUK:Share runat="server" id="share" CssClass="content text-content" />
     </div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="afterForm">
+    <EastSussexGovUK:EastSussex1Space runat="server" EnableViewState="false" ID="EastSussex1SpaceSearch" />
 </asp:Content>

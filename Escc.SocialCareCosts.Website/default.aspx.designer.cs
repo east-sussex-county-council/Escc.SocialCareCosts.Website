@@ -299,5 +299,14 @@ namespace Escc.SocialCareCosts.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UserControl share;
+        
+        /// <summary>
+        /// EastSussex1SpaceSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UserControl EastSussex1SpaceSearch;
     }
 }
