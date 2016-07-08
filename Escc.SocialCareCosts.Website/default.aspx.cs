@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Web;
-using EsccWebTeam.Data.Web;
-using EsccWebTeam.EastSussexGovUK;
 using EsccWebTeam.EastSussexGovUK.MasterPages;
 
 namespace Escc.SocialCareCosts.Website
