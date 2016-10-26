@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Escc.SocialCareCosts.Website.DefaultPage" %>
-<%@ Register TagPrefix="EastSussexGovUK" TagName="EastSussex1Space" src="~/masterpages/Controls/1Space.ascx"%>
+<%@ Register TagPrefix="EastSussexGovUK" TagName="EastSussex1Space" src="~/1Space.ascx"%>
+<%@ Register TagPrefix="EastSussexGovUK" TagName="Share" src="~/share.ascx"%>
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     <Metadata:MetadataControl runat="server"
         Title="How much will I have to pay?"
@@ -7,10 +8,10 @@
         DateCreated="2011-06-24"
         IpsvPreferredTerms="Charges for care"
         LgtlType="Forms" />
-    <ClientDependency:Css runat="server" Files="FormsSmall;ContentSmall" Moveable="false" />
     <EastSussexGovUK:ContextContainer runat="server" Desktop="true">
-        <ClientDependency:Css runat="server" Files="FormsMedium;ContentMedium" MediaConfiguration="Medium" />
-        <ClientDependency:Css runat="server" Files="FormsLarge;ContentLarge" MediaConfiguration="Large" />
+        <ClientDependency:Css runat="server" Files="FormsSmall" Moveable="false" />
+        <ClientDependency:Css runat="server" Files="FormsMedium" MediaConfiguration="Medium" />
+        <ClientDependency:Css runat="server" Files="FormsLarge" MediaConfiguration="Large" />
     </EastSussexGovUK:ContextContainer>
 </asp:Content>
 
