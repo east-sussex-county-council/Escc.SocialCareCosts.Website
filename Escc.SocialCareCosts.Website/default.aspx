@@ -52,7 +52,7 @@
                     <ul>
                         <li><a href="https://www.eastsussex.gov.uk/socialcare/leaving-home/managing-affairs/ ">Managing someone’s affairs</a></li>
                         <li><a href="https://www.eastsussex.gov.uk/community/benefits/">Benefits</a></li>
-                        <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></p></li>
+                        <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></li>
                         <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/ ">Contact Adult Social Care</a></li>
                     </ul>
                 </section>
