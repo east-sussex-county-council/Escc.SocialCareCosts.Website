@@ -23,7 +23,7 @@
 
             <asp:PlaceHolder runat="server" ID="text1b">
                 <section>
-                    <h2>1. Have you been assess as having eligible care and support needs?</h2>
+                    <h2>1. Have you been assessed as having eligible care and support needs?</h2>
 
                     <p>You answered: <strong>No</strong></p>
 
@@ -234,7 +234,7 @@
                     <Validators:EsccRequiredFieldValidator runat="server" ControlToValidate="q1radio" ErrorMessage="Please answer question 1 before you click 'Next'" ValidationGroup="group1" />
 
                     <div class="form short-form">
-                        <h2>1. Have you been assessed and told that you have substantial or critical needs?</h2>
+                        <h2>1. Have you been assessed as having eligible care and support needs?</h2>
                         <div class="radioButtonList">
                             <asp:RadioButtonList runat="server" RepeatDirection="horizontal" RepeatLayout="flow" ID="q1radio">
                                 <asp:ListItem runat="server" Text="yes" Value="1" />
@@ -307,10 +307,10 @@
                     <Validators:EsccRequiredFieldValidator runat="server" ControlToValidate="q5radio" ErrorMessage="Please answer question 5 before you click 'Next'" ValidationGroup="group5" />
 
                     <div class="form short-form">
-                        <h2>5. What kind of care do you need?</h2>
+                        <h2>5. What kind of care and support do you need?</h2>
                         <div class="radioButtonList">
                             <asp:RadioButtonList runat="server" RepeatDirection="horizontal" RepeatLayout="flow" ID="q5radio">
-                                <asp:ListItem runat="server" Text="care in my own home" />
+                                <asp:ListItem runat="server" Text="care and support in my own home" />
                                 <asp:ListItem runat="server" Text="care in a residential or nursing home" />
                             </asp:RadioButtonList>
                         </div>

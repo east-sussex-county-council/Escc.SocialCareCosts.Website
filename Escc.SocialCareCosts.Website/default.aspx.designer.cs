@@ -121,15 +121,6 @@ namespace Escc.SocialCareCosts.Website {
         protected global::System.Web.UI.WebControls.RadioButtonList q1radio;
         
         /// <summary>
-        /// button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button1;
-        
-        /// <summary>
         /// q2 control.
         /// </summary>
         /// <remarks>
@@ -146,15 +137,6 @@ namespace Escc.SocialCareCosts.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList q2radio;
-        
-        /// <summary>
-        /// button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button2;
         
         /// <summary>
         /// q3 control.
@@ -175,15 +157,6 @@ namespace Escc.SocialCareCosts.Website {
         protected global::System.Web.UI.WebControls.RadioButtonList q3radio;
         
         /// <summary>
-        /// button3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button3;
-        
-        /// <summary>
         /// q4 control.
         /// </summary>
         /// <remarks>
@@ -200,15 +173,6 @@ namespace Escc.SocialCareCosts.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList q4radio;
-        
-        /// <summary>
-        /// button4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button4;
         
         /// <summary>
         /// q5 control.
@@ -229,15 +193,6 @@ namespace Escc.SocialCareCosts.Website {
         protected global::System.Web.UI.WebControls.RadioButtonList q5radio;
         
         /// <summary>
-        /// button5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button5;
-        
-        /// <summary>
         /// q6 control.
         /// </summary>
         /// <remarks>
@@ -256,15 +211,6 @@ namespace Escc.SocialCareCosts.Website {
         protected global::System.Web.UI.WebControls.RadioButtonList q6radio;
         
         /// <summary>
-        /// button6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button6;
-        
-        /// <summary>
         /// q7 control.
         /// </summary>
         /// <remarks>
@@ -281,15 +227,6 @@ namespace Escc.SocialCareCosts.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList q7radio;
-        
-        /// <summary>
-        /// button7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Escc.FormControls.WebForms.EsccButton button7;
         
         /// <summary>
         /// share control.
