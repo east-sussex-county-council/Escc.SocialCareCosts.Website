@@ -356,8 +356,10 @@
             </asp:PlaceHolder>
 
         </section>
-
-        <EastSussexGovUK:Share runat="server" id="share" CssClass="content text-content" />
+        
+        <div class="content text-content">
+            <EastSussexGovUK:Share runat="server" id="share" />
+        </div>
     </div>
 </asp:Content>
 
