@@ -3,6 +3,7 @@ using System.Web;
 using Escc.EastSussexGovUK.Skins;
 using Escc.EastSussexGovUK.Views;
 using Escc.EastSussexGovUK.WebForms;
+using Escc.Web;
 
 namespace Escc.SocialCareCosts.Website
 {
@@ -23,6 +24,9 @@ namespace Escc.SocialCareCosts.Website
             {
                 skinnable.Skin = new CustomerFocusSkin(ViewSelector.CurrentViewIs(MasterPageFile));
             }
+
+            // Allow the ASP.NET WebForms postback script
+            new ContentSecurityPolicyHeaders(Response.Headers).AppendPolicy("script-src 'sha256-UITiqbXyaWS7NpwiFrMIbdXAZy5EXLRUHkpylF4504k='").UpdateHeaders();
 
             if (!IsPostBack)
             {
