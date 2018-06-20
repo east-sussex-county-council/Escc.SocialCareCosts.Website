@@ -1,0 +1,366 @@
+﻿@model Escc.SocialCareCosts.Website.SocialCareCostsModel
+@using ClientDependency.Core.Mvc
+@using Escc.ClientDependencyFramework
+@{
+    Model.Metadata.Title = "How much will I have to pay for social care support?";
+    Model.Metadata.Description = "Answer a few simple questions to find out how much you will have to pay for social care in East Sussex";
+    Model.Metadata.DateCreated = "2011-06-24";
+    Model.Metadata.IpsvPreferredTerms = "Charges for care";
+    Model.Metadata.LgtlType = "Forms";
+    Html.RequiresCss(CssFileAlias.Resolve("FormsSmall"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsMedium"), MediaQueryAlias.Resolve("Medium"));
+    Html.RequiresCss(CssFileAlias.Resolve("FormsLarge"), MediaQueryAlias.Resolve("Large"));
+}
+
+<div class="article">
+    <div class="content text-content">
+        <h1>How much will I have to pay for social care support?</h1>
+
+        @if (Model.ShowAnswer1B)
+        {
+            <section>
+                <h2>1. Have you been assessed as having eligible care and support needs?</h2>
+
+                <p>You answered: <strong>No</strong></p>
+
+                <p>Anyone can ask us for information and advice, or an assessment of their care and support needs. A social care assessment shows us what needs you have, and how they could be met through care and support. </p>
+
+                <p>We can do an assessment with you to work out if you have eligible care and support needs. If you are assessed as having care and support needs which substantially impact on your wellbeing, you may be eligible for help from us. </p>
+
+                <p><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/am-i-eligible-for-care-or-support/">Am I eligible for support?</a></p>
+
+                <p>If you haven’t had an assessment and would like one, or if you would like information and advice, get in touch to see how we can help.</p>
+
+                <p><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></p>
+            </section>
+        }
+
+        @if (Model.ShowAnswer2A)
+        {
+            <section>
+                <h2>2. How much do you have in savings and investments?</h2>
+
+                <p>You answered: <strong>I have more than &pound;23,250</strong></p>
+
+                <p>If you have more than &pound;23,250 in savings and investments, you will have to pay the full cost of your care and support. </p>
+
+                <p>Even if you don't qualify for any financial help, it's still a good idea to contact us for a social care assessment. We can give you information and advice about the type of care and support you need, and the local care and support options. We can also advise you about any benefits that you may be entitled to. </p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/leaving-home/managing-affairs/">Managing someone’s affairs</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/community/benefits/">Benefits</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer2B)
+        {
+            <section>
+                <h2>2. How much do you have in savings and investments?</h2>
+
+                <p>You answered: <strong>I have between &pound;14,250 and &pound;23,250</strong></p>
+
+                <p>Everyone has to pay a contribution towards the cost of their care and support. The amount you have to pay is based on what you can afford. We work this out by completing a financial assessment which looks at your income and savings. </p>
+
+                <p>If your savings are less than &pound;23,250, you will still have to pay towards your care from your income.</p>
+
+                <p>When we work out your income we disregard the first &pound;14,250 of your savings. If you have more than &pound;14,250, a tariff income is applied. This means that for each &pound;250 (or part of &pound;250) that you have above &pound;14,250, we assume that you have an income of &pound;1 a week.</p>
+
+                <p>We will also take your other sources of income into account, including most state benefits.</p>
+
+                <p>For more information, see:</p>
+
+                <p><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we look at your finances</a></p>
+            </section>
+        }
+
+        @if (Model.ShowAnswer2C)
+        {
+            <section>
+                <h2>2. How much do you have in savings and investments?</h2>
+
+                <p>You answered: <strong>I have less than &pound;14,250</strong></p>
+
+                <p>Everyone has to pay a contribution towards the cost of their care and support. The amount you have to pay is based on what you can afford. We work this out by completing a financial assessment which looks at your income and savings.</p>
+
+                <p>Because your savings come to less than &pound;14,250, you will not have to use them to pay for your care and support. However, you will still have to pay towards your care and support from your income.</p>
+
+                <p>When we work out what you have to pay, we take most sources of income into account, including state benefits.</p>
+
+                <p>For more information, see:</p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk//socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we look at your finances</a></li>
+                    <li><a href="https://www.gov.uk/pension-credit">GOV.UK – Pensions and Savings Credits</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer3B)
+        {
+            <section>
+                <h2>3. Do you own a property?</h2>
+
+                <p>You answered: <strong>No</strong></p>
+
+                <p>If you have less than &pound;23,250 in savings and investments and do not own a property then you may be eligible for help with the cost of your care and support. You will still have to contribute to the cost of your care and support from your income.</p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk//socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we look at your finances</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer4A)
+        {
+            <section>
+                <h2>4. Do you own more than one property or a property that you are not living in?</h2>
+
+                <p>You answered: <strong>Yes</strong></p>
+
+                <p>
+                    We will not take the value of your home into account while you are living in it. However, if you own a property but do not live in it, or if you own a second home
+                    (or other property or land) we will treat your equity in that as savings. By equity we mean the value of that property minus any outstanding mortgage or loan.
+                    If your equity in this property or land is more than &pound;23,250, you will have to pay the full cost of your care and support.
+                </p>
+
+                <p>Even if you don't qualify for any financial help, it's still a good idea to contact us for a social care assessment. We can give you information and advice about the type of care and support you need, and the local care and support options. We can also advise you about any benefits that you may be entitled to. </p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/applying-for-support/the-help-we-can-give-to-everyone/">Help we can give to everyone</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer5A)
+        {
+            <section>
+                <h2>5. What kind of care and support do you need?</h2>
+
+                <p>You answered: <strong>Care and support in my own home</strong></p>
+
+                <p>We will not take the value of your home into account while you are living in it. </p>
+
+                <p>If you are going to receive care and support in your own home, and do not own any other property, we will only look at your savings and income when we work out how much you will have to pay.  </p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/support-to-stay-at-home/">Support to stay at home</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer6A)
+        {
+        <section>
+                <h2>6. Are you going into residential care permanently or for a temporary stay?</h2>
+
+                <p>You answered: <strong>I am going into residential care for a temporary stay, and will return to my home</strong></p>
+
+                <p>We will not take the value of your home into account if you are going to a residential home temporarily and will return to your own home after an agreed time. </p>
+
+                <p>If your circumstances change and you have to go into residential care permanently, we may have to take the value of your home into account. This is because when you go into permanent residential care we consider that you have given up your home, so we look at your share of the property in our financial assessment.</p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/leaving-home/">Mo longer coping at home</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer7A)
+        {
+            <section>
+                <h2>7. Does someone else live in your home?</h2>
+
+                <p>You answered: <strong>Yes</strong></p>
+
+                <p>If you are going into permanent residential care, we will take the value of your home into account when we work out how much you will have to pay. This is because when you go into permanent residential care we consider that you have given up your home, so we look at your share of the property in our financial assessment. </p>
+
+                <p>However, we may not take the value of your home into account if any of the following people live in it:</p>
+
+                <ul>
+                    <li>your partner (this means your husband, wife or civil partner, or someone you live with as if they were your husband, wife or civil partner)</li>
+                    <li>a member of your family who is 60 or over</li>
+                    <li>a member of your family who is ill or disabled (this means they are receiving, or could be receiving, a disability benefit)</li>
+                    <li>a child you are responsible for who is under 16 years old</li>
+                </ul>
+
+                <p>If you share your home with someone who is not in the above list, we may take the value of your home into account when we work out how much you will have to pay towards your care. </p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/leaving-home/care-homes/">Care homes</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/going-into-hospital/home-pets-belongings/">Looking after your home, pets and belongings</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+        @if (Model.ShowAnswer7B)
+        {
+            <section>
+                <h2>8. Does someone else live in your home?</h2>
+
+                <p>You answered: <strong>No</strong></p>
+
+                <p>If you are going into permanent residential care, we will take the value of your home into account when we work out how much you will have to pay. This is because when you go into permanent residential care we consider that you have given up your home, so we look at your share of the property in our financial assessment.</p>
+
+                <p>You may be eligible for a 12-week property disregard. This means that when looking at how much you need to pay, we will not take the value of your property into account for the first 12 weeks of your permanent stay in a care home. </p>
+
+                <p>It applies when you go into long term care for the first time from a property that you own, and you have less than &pound;23,250 in other capital or assets.</p>
+
+                <p>If you qualify, we will only ask you to pay a contribution based on what you can afford. During that 12 week period, we will pay the difference between that amount and our standard charge.</p>
+
+                <p>After the 12 week period, we will take the value of your home into account when working out how much you should pay.</p>
+
+                <ul>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/leaving-home/care-homes/">Care homes</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/going-into-hospital/home-pets-belongings/">Looking after your home, pets and belongings</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/how-we-look-at-your-finances/">How we work out your finances</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/socialcare/getting-help-from-us/contact-adult-social-care/">Contact Adult Social Care</a></li>
+                </ul>
+            </section>
+        }
+
+    </div>
+
+    <section>
+        @if (Model.ShowQuestion1)
+        {
+            using (Html.BeginForm("Answer1", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>1. Have you been assessed as having eligible care and support needs?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question1" id="q1radio1" /><label for="q1radio1">yes</label>
+                            <input type="radio" value="2" name="Question1" id="q1radio2" /><label for="q1radio2">no</label>
+                        </div>
+                        <input type="submit" value="Next" id="button1" class="button" />
+                    </div>
+                </div>
+                }
+            }
+
+        @if (Model.ShowQuestion2)
+        {
+            using (Html.BeginForm("Answer2", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>2. How much do you have in savings and investments?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question2" id="q2radio1" /><label for="q2radio1">I have more than &pound;23,250</label>
+                            <input type="radio" value="2" name="Question2" id="q2radio2" /><label for="q2radio2">I have between &pound;14,250 and &pound;23,250</label>
+                            <input type="radio" value="3" name="2" id="q2radio3" /><label for="q2radio3">I have less than &pound;14,250</label>
+                        </div>
+                        <input type="submit" value="Next" id="button2" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+        @if (Model.ShowQuestion3)
+        {
+            using (Html.BeginForm("Answer3", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>3. Do you own a property?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question3" id="q3radio1" /><label for="q3radio1">yes</label>
+                            <input type="radio" value="2" name="Question3" id="q3radio2" /><label for="q3radio2">no</label>
+                        </div>
+                        <input type="submit" value="Next" id="button3" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+        @if (Model.ShowQuestion4)
+        {
+            using (Html.BeginForm("Answer4", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>4. Do you own more than one property, or a property that you are not living in?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question4" id="q4radio1" /><label for="q4radio1">yes</label>
+                            <input type="radio" value="2" name="Question4" id="q4radio2" /><label for="q4radio2">no</label>
+                        </div>
+                        <input type="submit" value="Next" id="button4" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+        @if (Model.ShowQuestion5)
+        {
+            using (Html.BeginForm("Answer5", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>5. What kind of care and support do you need?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question5" id="q5radio1" /><label for="q5radio1">care and support in my own home</label>
+                            <input type="radio" value="2" name="Question5" id="q5radio2" /><label for="q5radio2">care in a residential or nursing home</label>
+                        </div>
+                        <input type="submit" value="Next" id="button5" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+        @if (Model.ShowQuestion6)
+        {
+            using (Html.BeginForm("Answer6", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>6. Are you going into residential care permanently or for a temporary stay?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question6" id="q6radio1" /><label for="q6radio1">I am going into residential care for a temporary stay, and will return to my home</label>
+                            <input type="radio" value="2" name="Question6" id="q6radio2" /><label for="q6radio2">I am going into residential care permanently</label>
+                        </div>
+                        <input type="submit" value="Next" id="button6" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+        @if (Model.ShowQuestion7)
+        {
+            using (Html.BeginForm("Answer7", "Default", FormMethod.Get))
+            {
+                <div class="content text-content">
+                    <div class="form short-form">
+                        <h2>7. Does someone else live in your home?</h2>
+                        <div class="radioButtonList">
+                            <input type="radio" value="1" name="Question7" id="q7radio1" /><label for="q7radio1">yes</label>
+                            <input type="radio" value="2" name="Question7" id="q7radio2" /><label for="q7radio2">no</label>
+                        </div>
+                        <input type="submit" value="Next" id="button7" class="button" />
+                    </div>
+                </div>
+            }
+        }
+
+    </section>
+
+    <div class="content text-content">
+        @{ Html.RenderPartial("~/Views/EastSussexGovUK/Features/_Share.cshtml", Model); }
+    </div>
+</div>
+
+@{ 
+    Model.ShowEastSussex1SpaceWidget = true;
+    Html.RenderPartial("~/Views/EastSussexGovUK/Features/_EastSussex1Space.cshtml", Model);
+}
+
