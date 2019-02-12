@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Escc.EastSussexGovUK.Mvc;
+using Exceptionless;
 
 namespace Escc.SocialCareCosts.Website
 {
@@ -12,20 +15,47 @@ namespace Escc.SocialCareCosts.Website
     public class DefaultController : Controller
     {
         // GET: Default
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             var model = new SocialCareCostsModel();
+            await AddSitewideFeaturesToModel(model);
+
             model.ShowQuestion1 = true;
+
             return View(model);
         }
 
-         
+        private async Task AddSitewideFeaturesToModel(SocialCareCostsModel model)
+        {
+            var templateRequest = new EastSussexGovUKTemplateRequest(Request);
+            try
+            {
+                model.WebChat = await templateRequest.RequestWebChatSettingsAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
+            try
+            {
+                model.TemplateHtml = await templateRequest.RequestTemplateHtmlAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
+        }
+
+
         /// <summary>
         /// Handles the answer to question 1
         /// </summary>
         [HttpGet]
-        public ActionResult Answer1(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer1(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question1)
             {
                 case 1:
@@ -48,8 +78,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 2
         /// </summary>
         [HttpGet]
-        public ActionResult Answer2(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer2(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question2)
             {
                 case 1:
@@ -75,8 +106,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 3
         /// </summary>
         [HttpGet]
-        public ActionResult Answer3(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer3(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question3)
             {
                 case 1:
@@ -96,8 +128,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 4
         /// </summary>
         [HttpGet]
-        public ActionResult Answer4(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer4(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question4)
             {
                 case 1:
@@ -117,8 +150,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 5
         /// </summary>
         [HttpGet]
-        public ActionResult Answer5(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer5(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question5)
             {
                 case 1:
@@ -138,8 +172,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 6
         /// </summary>
         [HttpGet]
-        public ActionResult Answer6(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer6(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question6)
             {
                 case 1:
@@ -159,8 +194,9 @@ namespace Escc.SocialCareCosts.Website
         /// Handles the answer to question 7
         /// </summary>
         [HttpGet]
-        public ActionResult Answer7(SocialCareCostsModel model)
+        public async Task<ActionResult> Answer7(SocialCareCostsModel model)
         {
+            await AddSitewideFeaturesToModel(model);
             switch (model.Question7)
             {
                 case 1:
